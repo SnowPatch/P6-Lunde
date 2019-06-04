@@ -11,14 +11,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Icon -->
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#313133">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#313133">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <!--      -->
-  
-  <!-- Cookies -->
-  
-  <!--         -->
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=<?php print filemtime("css/main.css"); ?>" />
 
 </head>
 <body>
@@ -78,13 +82,13 @@
   <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
 	
-	<div class="canvas no-select" id="viewer">
+	<div class="canvas no-select dragscroll" id="viewer">
 	
 	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
 	  
       <div class="marker mad but" style="top:373px; left:1247px;" onClick="toggleElement('minkoebmand');">
 		<div class="marker-info" id="minkoebmand">
-		  <a class="title">Min Købmand</a>
+		  <a class="title">MinKøbmand</a>
 		  <a class="desc">Indkøbsmulighed for hver en smag til dagligdagens brug eller festen</a>
 		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
 		</div>
@@ -108,7 +112,7 @@
 		
       <div class="marker tra" style="top:675px; left:1080px;" onClick="toggleElement('togstation');">
 		<div class="marker-info" id="togstation">
-		  <a class="title">Tog station(Vestbanen)</a>
+		  <a class="title">Togstation (Vestbanen)</a>
 		  <a class="desc">Afgang fra Lunde med Vestbanen en gang i timen</a>
 		  <a class="extra">30 minutters transporttid til Esbjerg</a>
 		</div>
@@ -371,7 +375,7 @@ document.addEventListener('change', function(event) {
 	  <div class="row">
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/dagligvarebutik.webp" alt="Min Købmand">
+            <img class="card-image" src="images/dagligvarebutik.webp" alt="MinKøbmand">
             <div class="imageText-header"><p>MinKøbmand</p></div>
             <div class="imageText"><p>Den lokale købmand, hvor de daglige indkøb kan klares.</p></div>
         </div>
@@ -383,13 +387,13 @@ document.addEventListener('change', function(event) {
         </div>
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-kindergarden.webp" alt="Lunde børnhave">
+            <img class="card-image" src="images/lunde-kindergarden.webp" alt="Lunde Børnhave">
              <div class="imageText-header"><p>Lunde Børnehave</p></div>
             <div class="imageText"><p>Pæn børnehave med søde pædagoger og en legeplads med plads til alle.</p></div>
         </div>
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-station.webp" alt="Lunde Togstation">
+            <img class="card-image" src="images/lunde-station.webp" alt="Togstation (Vestbanen)">
             <div class="imageText-header"><p>Togstation (Vestbanen)</p></div>
             <div class="imageText"><p>Når du kører med Vestbanen er der aldrig langt til andre byer. </p></div>
         </div>
@@ -401,7 +405,7 @@ document.addEventListener('change', function(event) {
         </div>
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-stadion.webp" alt="Lunde Stadion">
+            <img class="card-image" src="images/lunde-stadion.webp" alt="Stadion">
             <div class="imageText-header"><p>Stadion</p></div>
             <div class="imageText"><p>Midt i byen ligger stadion, hvor der er plads til sport, leg og aktiviteter der ud over.</p></div> 
         </div>
@@ -487,15 +491,8 @@ function toggleElement(id) {
 }
 </script>
 
-<script src="js/RequestAnimationFrame.js"></script>
-<script src="js/TouchScroll.js"></script>
+<script src="js/dragscroll.js"></script>
 <script>
-var viewer = new TouchScroll();
-viewer.init({
-	id: 'viewer',
-	draggable: true,
-	wait: false
-});
 document.getElementById("viewer").scrollTop = 120;
 document.getElementById("viewer").scrollLeft = 340;
 </script>

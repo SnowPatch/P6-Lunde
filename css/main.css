@@ -2,10 +2,10 @@
 @import url("structure.css");
 
 body {
-	background: #FFFFFF; 
+	background: #313133; 
 	font-family: OpenSans;
 	font-weight: 400;
-	overflow-x: hidden !important;
+	overflow-x: hidden;
 } 
 
 
@@ -13,7 +13,7 @@ header {
 	display: inline-block;
 	width: 100%; 
 	min-height: 50px;
-	background: #313133;
+	background: none;
 }
 
 
@@ -201,10 +201,12 @@ header .header-content .desc {
 
 
 main {
+	background: #FFFFFF;
 	display: inline-block;
 	width: 100%; 
 	min-height: 50px;
 	color: #333333;
+	padding-bottom: 100px;
 }
 
 main section {
@@ -314,7 +316,7 @@ main .checkbox-contain {
 	background: #414142;
 	width: 280px;
 	z-index: 99;
-	position: absolute;
+	position: relative;
 	margin: -500px 0px 0px 20px;
 }
 main .checkbox-contain .drop-button {
@@ -362,13 +364,12 @@ main #mapDrop .check label {
     cursor: -webkit-grabbing;
 }
 
+
 main .card-image {
     width: 100%; 
     height: auto; 
 	-webkit-filter: grayscale(25%);
-    -webkit-filter: contrast(80%);
 	filter: grayscale(25%);
-    filter:contrast(80%);
 }
 main .imageText-header {
     font-size: 13px;
@@ -383,6 +384,80 @@ main .imageText {
 	height: 60px;
 	overflow: hidden;
 }
+
+
+main .search-title {
+	margin: 0px 0px 8px 0px;
+}
+main .search-time {
+	display: inline-block;
+	width: 100%;
+	margin: 0px 0px 40px 0px;
+	font-size: 18px;
+	color: #B5B3B3;
+}
+
+main .tile {
+	margin-bottom: 30px;
+}
+main .tile .image {
+	width: 100%;
+	min-height: 100px;
+	background: #EDEDED;
+} main .tile .image img {
+	width: 100%;
+	height: auto;
+	-webkit-filter: grayscale(25%);
+	filter: grayscale(25%);
+}
+main .tile .info {
+	width: 100%;
+	margin-top: 15px;
+}
+main .tile .info .title {
+	display: inline-block;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333333;
+	line-height: 1.2;
+}
+main .tile .info .desc {
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	color: #919191;
+	line-height: 1.2;
+	margin-top: 4px;
+}
+#jsonResults #loader {
+	-webkit-filter: invert(50%);
+	filter: invert(50%);
+	width: 70px; 
+	height: auto;
+	margin-bottom: 30px;
+}
+#jsonResults .tile .image img {
+	height: 180px;
+}
+
+
+main p.paragraph {
+	font-size: 18px;
+	color: #333333;
+	line-height: 1.3;
+}
+
+
+#kontakt h3 {
+	margin: 0px 0px 25px 0px;
+}
+#kontakt a[href] {
+	margin: 0px 0px 30px 0px;
+}
+
+
+
 
 
 .reveal {
@@ -401,8 +476,7 @@ footer {
 	display: inline-block;
 	width: 100%; 
 	min-height: 50px;
-	background: #313133;
-	margin-top: 100px;
+	background: none;
 	padding: 60px 0px 20px 0px;
 }
 
@@ -451,6 +525,16 @@ footer .copyright .item a {
 } 
 
 
+
+#styleguide h3 {
+	margin: 0px 0px 15px 0px;
+}
+#styleguide .explanation {
+	display: inline-block;
+	width: 100%;
+	line-height: 1.4;
+	margin-bottom: 40px;
+}
 
 #styleguide code {
 	display: inline-block;

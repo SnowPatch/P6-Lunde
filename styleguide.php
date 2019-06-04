@@ -11,14 +11,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Icon -->
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#313133">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#313133">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <!--      -->
-  
-  <!-- Cookies -->
-  
-  <!--         -->
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=<?php print filemtime("css/main.css"); ?>" />
 
 </head>
 <body>
@@ -31,6 +35,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Farver</h3>
+		  <a class="explanation">Farverne på siden er holdt dæmpede og er primært hvide-grå-sorte nuancer. Dette er for at farver fra bykort og billeder er mere fremtrædende. Den grønne farve er brugt til elementer som skal have ekstra synlighed, herunder logo i footeren og call-to-action på forsiden.</a>
 		</div>
 		
 		<div class="grid-xs-4 grid-lg-2">
@@ -73,6 +78,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Typografi</h3>
+		  <a class="explanation">Sidens skrifttyper er ligeledes holdt simple for ikke at tage opmærksomhed fra det øvrige indhold. Der benyttes en font kaldet "ITC Avant Garde" til overskrifter og "OpenSans" til al øvrig tekst.</a>
 		</div>
 		
 		<div class="grid-xs-12 grid-lg-6">
@@ -111,6 +117,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Knapper</h3>
+		  <a class="explanation">Knapperne er lavet med samme firkantede og simple design som sidens øvrige elementer. Button-primary bruges når der skal skabes opmærksomhed, eksempelvis som call-to-action på forsiden. Button-primary-dark benyttes til alle øvrige knapper.</a>
 		</div>
 		
 		<div class="grid-xs-12 grid-lg-6">
@@ -133,22 +140,39 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Billeder</h3>
+		  <a class="explanation">Sidens billeder er alle opsat i grid og bruges til visning af faciliteter og boliger. På siden er der desuden tilknyttet overskrift og en lille sektion beskrivende tekst under hvert billede.</a>
 		</div>
 		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/dagligvarebutik.webp" alt="MinKøbmand" /> </div>
 		</div>
 	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-skole.webp" alt="Lunde skole" /> </div>
 		</div>
 		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-kindergarden.webp" alt="Lunde børnhave" /> </div>
 		</div>
 	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-station.webp" alt="Togstation (Vestbanen)" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-kro.webp" alt="Lunde Kro" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-stadion.webp" alt="Lunde Stadion" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-boldklub.webp" alt="Lunde Boldklub" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/grillhytte.webp" alt="Grillhytte" /> </div>
 		</div>
 	  
 	  </div>
@@ -161,6 +185,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Navigation</h3>
+		  <a class="explanation">Navigationen er opsat med fokus på læseretning. Til venstre er logoet for Lunde, som minder brugeren om hvad de kigger på. Derefter følger menupunkterne og til sidst et menupunkt opsat som knap, for at skabe mere opmærksomhed end de øvrige punkter. Navigationen er responsiv og menupunkterne folder sig sammen til en "hamburger-menu" når skærmens bredde er under 750px.</a>
 		</div>
 		
 		<div class="grid-xs-12">
@@ -203,26 +228,6 @@
 	&lt;/div>
   &lt;/div>
 &lt;/nav></code></pre>
-		</div>
-	  
-	  </div>
-	</div>
-  </section>
-  
-  <section>
-	<div class="container">
-	  <div class="row">
-		
-		<div class="grid-xs-12">
-		  <h3>Forms</h3>
-		</div>
-		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
 		</div>
 	  
 	  </div>
